@@ -8,13 +8,15 @@ var sum = document.getElementById("sum");
 document.getElementById("plus").addEventListener("click", addStuff);
 
 function addStuff() {
-    document.getElementById("sum").innerText = "hello";
+    document.getElementById("answer").innerText = "hello";
     console.log("yerp");
 }
 
 document.getElementById("minus").addEventListener("click", subtractStuff);
 
 function subtractStuff() {
-    document.getElementById("sum").innerText = "hiya";
+    let sum = 0
     console.log("derf");
+    var out = parseFloat('input' - parseFloat('sum'));
+    document.getElementById("answer").innerText = "hi";
 }

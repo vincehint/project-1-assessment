@@ -3,22 +3,45 @@ h1 {
     color: red
 }
 
-.numberInput {
-    display: inline;
-    margin: auto;
-    align-items: center;
-}
-
 form {
     text-align: center;
 }
 
-.output {
-    display: inline;
-    text-align: center;
-    margin: auto;
-}
-
 input {
     text-align: center;
+}
+
+#answer {
+    color: black;
+    font-size: large;
+    margin: auto;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#input {
+    color: black;
+    font-size: large;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#plus {
+    font-size: larger;
+    height: 40px;
+    width: 40px;
+}
+
+#minus {
+    font-size: larger;
+    height: 40px;
+    width: 40px;
+    
+}
+
+.buttons {
+    background-color: darkslategray;
+    color: white;
+    border-radius: 4px;
 }
