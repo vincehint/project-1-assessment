@@ -1,22 +1,42 @@
 console.log("Heck Yes");
+let input = document.getElementById('input');
+let answer = document.getElementById('answer');
+let plus = document.getElementById('plus');
+let minus = document.getElementById('minus');
+let sum = 0;
 
 
-var x = document.getElementById("plus");
-var y = document.getElementById("input").value;
-var z = document.getElementById("minus");
-var sum = document.getElementById("sum");
-document.getElementById("plus").addEventListener("click", addStuff);
-
-function addStuff() {
-    document.getElementById("answer").innerText = "hello";
-    console.log("yerp");
+function newAnswer() {
+    answer.innerText = sum;
 }
 
-document.getElementById("minus").addEventListener("click", subtractStuff);
-
-function subtractStuff() {
-    let sum = 0
-    console.log("derf");
-    var out = parseFloat('input' - parseFloat('sum'));
-    document.getElementById("answer").innerText = "hi";
+function addition() {
+    console.log(typeof input);
+    sum += parseInt(input.value);
+    console.log(sum);
 }
+
+function subtraction() {
+    sum -= parseInt(input.value);
+    console.log(sum);
+}
+
+plus.addEventListener("click", () => {
+    addition();
+    newAnswer();
+})
+
+minus.addEventListener("click", () => {
+    subtraction();
+    newAnswer();
+})
+
+
+
+
+
+document.getElementById("minus").addEventListener("click", function() {
+    console.log("I've been subtracted!");
+})
+
+
